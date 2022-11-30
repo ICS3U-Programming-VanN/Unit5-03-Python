@@ -37,10 +37,10 @@ def calc_mark(level):
             mark = 58
         case "1":
             mark = 54
-        case "-1":
+        case "1-":
             mark = 51
         case _:
-            mark = 0
+            mark = -1
 
     # Returns mark value to main()
     return mark
@@ -54,7 +54,7 @@ def main():
     user_mark = calc_mark(user_level)
 
     # If the user did not enter a valid input
-    if user_mark == 0:
+    if user_mark == -1:
         print(f"{user_level} is not valid input!")
     else:
         # Displays their mark

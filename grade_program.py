@@ -39,6 +39,7 @@ def calc_mark(level):
             mark = 54
         case "1-":
             mark = 51
+        # If the user's level is invalid
         case _:
             mark = -1
 
